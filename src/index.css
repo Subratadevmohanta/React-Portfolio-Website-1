@@ -98,4 +98,21 @@ a:hover {
     transition: var(--transition);
 }
 
-.btn:hover {}
+.btn:hover {
+    background: var(--colore-white);
+    color: var(--colore-bg);
+    border-color: transparent;
+}
+
+.btn-primary {
+    background: var(--colore-primary);
+    color: var(--colore-bg);
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* *********************** Media Quries(Media Devices)*************** */
