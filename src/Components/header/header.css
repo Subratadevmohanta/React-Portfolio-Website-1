@@ -40,8 +40,8 @@ header {
 
 /* ***************************** Me ************************ */
 .me {
-    background: linear-gradient(var(--color-primary), 
-    transparent);
+    background: linear-gradient(var(--color-primary),
+            transparent);
     width: 22rem;
     height: 30rem;
     position: absolute;
@@ -71,11 +71,12 @@ header {
 
 /* *********************** Media Quires(Small Devices)*************** */
 @media screen and (max-width: 600px) {
-    header{
+    header {
         height: 100vh;
     }
+
     .header__socials,
-    .scroll__down{
+    .scroll__down {
         display: none;
     }
 }
