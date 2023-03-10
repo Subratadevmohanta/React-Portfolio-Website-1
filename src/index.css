@@ -10,12 +10,12 @@
 }
 
 :root {
-    --colore-bg: #1f1f38;
-    --colore-bg-variant: #2c2c6c;
-    --colore-primary: #4db5ff;
-    --colore-primary-variant: rgba(77, 181, 255, 0.4);
-    --colore-white: #fff;
-    --colore-light: rgba(255, 255, 255, 0.6);
+    --color-bg: #1f1f38;
+    --color-bg-variant: #2c2c6c;
+    --color-primary: #4db5ff;
+    --color-primary-variant: rgba(77, 181, 255, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
 
     --transition: all 400ms ease;
 
@@ -34,13 +34,13 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--colore-bg);
-    color: var(--colore-white);
+    background: var(--color-bg);
+    color: var(--color-white);
     line-height: 1.7;
     background-image: url(../src/assets/bg.png);
 }
 
-/* ---------------- Genarel Style------------------ */
+/* ---------------- General Style------------------ */
 
 .container {
     width: var(--container-width-lg);
@@ -61,52 +61,53 @@ h1 {
 
 section {
     margin-top: 8rem;
+    height: 100vh;
 }
 
 section>h2,
 section>h5 {
     text-align: center;
-    color: var(--colore-light);
+    color: var(--color-light);
 }
 
 section>h2 {
-    color: var(--colore-primary);
+    color: var(--color-primary);
     margin-bottom: 3rem;
 }
 
 .text-light {
-    color: var(--colore-light);
+    color: var(--color-light);
 }
 
 a {
-    color: var(--colore-primary);
+    color: var(--color-primary);
     transition: var(--transition);
 }
 
 a:hover {
-    color: var(--colore-white);
+    color: var(--color-white);
 }
 
 .btn {
     width: max-content;
     display: inline-block;
-    color: var(--colore-primary);
+    color: var(--color-primary);
     padding: 0.7rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var(--colore-primary);
+    border: 1px solid var(--color-primary);
     transition: var(--transition);
 }
 
 .btn:hover {
-    background: var(--colore-white);
-    color: var(--colore-bg);
+    background: var(--color-white);
+    color: var(--color-bg);
     border-color: transparent;
 }
 
 .btn-primary {
-    background: var(--colore-primary);
-    color: var(--colore-bg);
+    background: var(--color-primary);
+    color: var(--color-bg);
 }
 
 img {
@@ -115,4 +116,26 @@ img {
     object-fit: cover;
 }
 
-/* *********************** Media Quries(Media Devices)*************** */
+/* *********************** Media Queries(Medium Devices)*************** */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    section {
+        margin-top: 6rem;
+    }
+}
+
+
+
+/* *********************** Media Queries(Small Devices)*************** */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    section>h2 {
+        margin-bottom: 2rem;
+    }
+}
